@@ -1,94 +1,53 @@
 <?php
 /**
- * The header for our theme
+ * The header for our theme.
  *
  * This is the template that displays all of the <head> section and everything up until <div id="content">
  *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package Mystery Themes
- * @subpackage News Portal
- * @since 1.0.0
+ * @package Blogtag
  */
-
-?><!doctype html>
+?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
-
+<link rel="profile" href="https://gmpg.org/xfn/11">
 <?php wp_head(); ?>
 </head>
-
-<body <?php body_class(); ?>>
-
-<?php
-	if ( function_exists( 'wp_body_open' ) ) {
-		wp_body_open();
-	} else {
-		do_action( 'wp_body_open' );
-	}
-
-	/**
-     * news_portal_before_page hook
-     *
-     * @since 1.0.0
-     */
-    do_action( 'news_portal_before_page' );
-?>
-
+<body <?php body_class(); ?> >
+<?php wp_body_open(); ?>
 <div id="page" class="site">
-
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'news-portal' ) ;?></a>
-
-	<?php
-		$news_portal_top_header_option = news_portal_get_customizer_option_value( 'news_portal_top_header_option' );
-		if ( $news_portal_top_header_option == true ) {
-			
-			/**
-		     * news_portal_top_header hook
-		     *
-		     * @hooked - news_portal_top_header_start - 5
-		     * @hooked - news_portal_top_left_section - 10
-		     * @hooked - news_portal_top_right_section - 15
-		     * @hooked - news_portal_top_header_end - 20
-		     *
-		     * @since 1.0.0
-		     */
-		    do_action( 'news_portal_top_header' );
-		}
-
-		/**
-	     * news_portal_header_section hook
-	     *
-	     * @hooked - news_portal_header_section_start - 5
-	     * @hooked - news_portal_header_logo_ads_section_start - 10
-	     * @hooked - news_portal_site_branding_section - 15
-	     * @hooked - news_portal_header_ads_section - 20
-	     * @hooked - news_portal_header_logo_ads_section_end - 25
-	     * @hooked - news_portal_primary_menu_section - 30
-	     * @hooked - news_portal_header_section_end - 35
-	     *
-	     * @since 1.0.0
-	     */
-	    do_action( 'news_portal_header_section' );
-	    
-		$news_portal_ticker_option = news_portal_get_customizer_option_value( 'news_portal_ticker_option' );
-		if ( $news_portal_ticker_option == true && is_front_page() ) {
-
-			/**
-		     * news_portal_top_header hook
-		     *
-		     * @hooked - news_portal_ticker_section_start - 5
-		     * @hooked - news_portal_ticker_content - 10
-		     * @hooked - news_portal_ticker_section_end - 15
-		     *
-		     * @since 1.0.0
-		     */
-		    do_action( 'news_portal_ticker_section' );
-		}
-	?>
-
-	<div id="content" class="site-content">
-		<div class="mt-container">
+<a class="skip-link screen-reader-text" href="#content">
+<?php _e( 'Skip to content', 'blogtag' ); ?></a>
+<div class="wrapper" id="custom-background-css">
+  <!--header--> 
+  <?php
+  $main_banner_section_background_image = get_theme_mod('main_banner_section_background_image', '');
+  function get_main_banner_section_background_image_url() {
+    if ( get_theme_mod( 'main_banner_section_background_image' ) > 0 ) {
+      return wp_get_attachment_url( get_theme_mod( 'main_banner_section_background_image' ) );
+    }
+  } 
+  do_action('blogtag_action_header_type_section');
+  $blogdata_enable_main_slider = get_theme_mod('show_main_banner_section',false);
+  $slider_position = get_theme_mod('main_slider_position', 'left') == 'left' ? '' : ' row-reverse';
+if(is_home() || is_front_page()) {  
+    if($blogdata_enable_main_slider){ ?>
+        <!--mainfeatured start-->
+        <div class="mainfeatured <?php if (!empty($main_banner_section_background_image)) { echo' over mt-0'; }?>" style="background-image: url('<?php echo esc_attr( get_main_banner_section_background_image_url() ); ?>')">
+            <div class="featinner">
+                <!--container-->
+                <div class="container">
+                    <!--row-->  
+                    <div class="row gap-1 gap-md-0<?php echo esc_attr($slider_position)?>">
+                      <?php do_action('blogdata_action_front_page_main_section_1'); ?>
+                    </div><!--/row-->
+                </div><!--/container-->
+            </div>
+        </div>
+        <!--mainfeatured end-->
+        <?php
+    }
+  }
+?>

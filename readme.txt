@@ -1,68 +1,89 @@
-=== News Portal ===
+﻿=== Blogtag ===
+Contributors: Themeansar
+Tags: blog, portfolio, news, grid-Layout, one-column, two-columns, three-columns, flexible-header, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, post-formats, rtl-language-support, theme-options, sticky-post, threaded-comments, translation-ready, block-styles, wide-blocks
+Requires at least: 5.4
+Requires PHP: 7.0
+Tested up to: 6.6
+Stable tag: 0.4
+Version: 0.4
+License: GPLv3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Contributors:       mysterythemes
-Requires at least:  5.0
-Tested up to:       6.7
-Requires PHP:       7.2
-License:            GPLv3 or later
-License URI:        http://www.gnu.org/licenses/gpl-3.0.html
-Tags:               news, blog, entertainment, grid-layout, one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-colors, custom-logo, featured-image-header, footer-widgets, full-width-template, rtl-language-support, theme-options, translation-ready
+Blogtag WordPress Theme is child theme of Blogus, Copyright 2020 Themeansar
+Blogtag is distributed under the terms of the GNU General Public License v3
 
+Blogtag is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Blogtag is clean, powerful, flexible, highly customizable and Gutenberg ready WordPress theme with responsive and beautifully crafted design.
 
 == Description ==
 
-News Portal is the free ultimate magazine theme with creative design and powerful features that allow you to quickly and easily create a newspaper & blog style website to suit your needs. It is completely built on Customizer which allows you to customize most of the theme settings easily with live previews. It is the fully widgetized theme so as to let users manage the website using the easy to use widgets. You can import the whole beautiful demo in just one click. News Portal Theme is the best choice to create a Beautiful & Powerful News/magazine/blog websites with ease.Check the demo at https://demo.mysterythemes.com/news-portal-demos/
+Blogtag is a fast, clean, modern-looking Best Responsive News Magazine WordPress theme. The theme is fully widgetized, so users can manage the content by using easy to use widgets. Blogtag is suitable for dynamic news, newspapers, magazine, publishers, blogtag, editors, online and gaming magazines, newsportals,personal blogtag, newspaper, publishing or review siteand any creative website. Blogtag is SEO friendly, WPML,Gutenberg, translation and RTL ready. Live preview : https://demos.themeansar.com/blogdata/blogtag and documentation at https://docs.themeansar.com/docs/blogdata/
 
-== Installation ==
+* JS marquee.js
+Author: Aamir Afridi
+URL:  http://aamirafridi.com/jquery/jquery-marquee-plugin
+License: MIT
 
-1. In your admin panel, go to Appearance > Themes and click the Add New button.
-2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
-3. Click Activate to use your new theme right away.
 
-== Copyright ==
+== Image Licence == 
+https://pxhere.com/en/photo/140240
 
-News Portal WordPress Theme, Copyright 2017 Mystery Themes.
-News Portal is distributed under the terms of the GNU GPL
+https://stocksnap.io/photo/street-art-KZV4NUANRZ
+License: Creative Commons CC0 license.
+License URI: https://pxhere.com/en/license
+Source: https://pxhere.com/en/photo/1087277
 
-== Resources ==
-	normalize.css, Copyright 2012-2016 Nicolas Gallagher and Jonathan Neal
-    License: MIT Source: https://necolas.github.io/normalize.css/
+License: Creative Commons CC0 license.
+License URI: https://pxhere.com/en/license
+Source: https://pxhere.com/en/photo/1588583
 
-    Theme name is based on Underscores http://underscores.me/,
-    (C) 2012-2017 Automattic, Inc.
-    License: GNU General Public License v2 or later
+License: Creative Commons CC0 license.
+License URI: https://pxhere.com/en/license
+Source: https://pxhere.com/en/photo/1363072
 
-	Font Awesome by Dave Gandy
-    Licenses: SIL OFL 1.1, MIT, CC BY 3.0
-    Source: https://github.com/FortAwesome/Font-Awesome
+License: Creative Commons CC0 license.
+License URI: https://pxhere.com/en/license
+Source: https://pxhere.com/en/photo/1262676 
 
-    Lightslider Copyright 2014 Sachin N
-    Licenses: MIT
-    https://github.com/sachinchoolur/lightslider
+License: Creative Commons CC0 license.
+License URI: https://pxhere.com/en/license
+Source: https://pxhere.com/en/photo/32966
 
-    Sticky js, Copyright 2014-2016, Anthony Garand
-    License: GPL
-    Source: https://github.com/garand/sticky
 
-    TGM-Plugin-Activation, Copyright (c) 2011, Thomas Griffin
-	License: GNU GPL, Version 2
-	Source: https://github.com/TGMPA/TGM-Plugin-Activation
+https://stocksnap.io/photo/nature-landscape-F4ZVI5Y7GU
+https://stocksnap.io/photo/people-girl-HQR8BJFZID
+https://stocksnap.io/photo/woman-landscape-CVIPMJXMQB
 
-	TRT Customizer Pro, Copyright 2016 by Justin Tadlock
-    License: GPLv2 or later
-    Source: https://github.com/justintadlock/trt-customizer-pro
+https://pxhere.com/en/photo/1028432
+https://pxhere.com/en/photo/680951
+https://pxhere.com/en/photo/862296
+https://pxhere.com/en/photo/541877
 
-    Theia Sticky Sidebar, Copyright 2013-2016 by WeCodePixels
-    License: MIT
-    https://github.com/WeCodePixels/theia-sticky-sidebar
+https://pxhere.com/en/photo/595813
+https://pxhere.com/en/photo/1127318
+https://pxhere.com/en/photo/1071730
+ 
 
-	Screenshot Images
-    Licenses: CCO Public Domain
-	https://pxhere.com/en/photo/1554977
-	https://pxhere.com/en/photo/51334
-	https://pxhere.com/en/photo/112362
-	https://pxhere.com/en/photo/1046901
-	https://pxhere.com/en/photo/1409031
-	https://pxhere.com/en/photo/233817
-	https://pxhere.com/en/photo/884591
-	https://pxhere.com/en/photo/625273
+== Frequently Asked Questions ==
+
+= Does this theme support any plugins? =
+
+Blogtag includes support for WooCommerce and Contact From 7.
+
+== Changelog ==
+
+= 0.1 =
+* Initial release.
+
+= 0.2 =
+* Fixed keyboard navigation Issue.
+
+= 0.3 =
+* Update Theme URI.
+
+= 0.4 =
+* Added Customizer Image.
+* Added Dark N Light Switcher.
+* Fixed Responsive Issues.
